@@ -231,9 +231,9 @@ label yes:
         $ emotions = {"sad": sadness, "happy": happy}
         "You made the sheep feel really [max(emotions, key=emotions.get)]."
 
-        if sadness > 3:
+        if sadness >= 3:
                 $ persistent.bad_ending = True
-        elif happy > 3:
+        elif happy >= 3:
                 $ persistent.good_ending = True
         
         if persistent.good_ending == True:
@@ -288,9 +288,9 @@ label no:
         $ emotions = {"sad": sadness, "happy": happy}
         "You made the sheep feel really [max(emotions, key=emotions.get)]."
 
-        if sadness > 6:
+        if sadness >= 6:
                 $ persistent.bad_ending = True
-        elif happy > 6:
+        elif happy >= 6:
                 $ persistent.good_ending = True
         
         if persistent.good_ending == True:
