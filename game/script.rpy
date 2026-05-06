@@ -15,6 +15,10 @@ define p = Character("You")
 define s = Character("Strange Person")
 
 $name = ""
+
+default persistent.good_ending = False
+default persistent.bad_ending = False
+
 image house:
         "images/bg_house.png"
 
@@ -226,7 +230,16 @@ label yes:
 
         $ emotions = {"sad": sadness, "happy": happy}
         "You made the sheep feel really [max(emotions, key=emotions.get)]."
-        "{b}Cookies Ending (Good){/b}."
+
+        if sadness > 3:
+                $ persistent.bad_ending = True
+        elif happy > 3:
+                $ persistent.good_ending = True
+        
+        if persistent.good_ending:
+                "{b}Cookies Happy Ending (Good){/b}."
+        elif persistent.bad_ending:
+                "{b}Cookies Sad Ending (Good){/b}."
         return
 
 label no:
@@ -275,7 +288,15 @@ label no:
         $ emotions = {"sad": sadness, "happy": happy}
         "You made the sheep feel really [max(emotions, key=emotions.get)]."
 
-        "{b}REALLY REALLY BAD ENDING{/b}."
+        if sadness > 6:
+                $ persistent.bad_ending = True
+        elif happy > 6:
+                $ persistent.good_ending = True
+        
+        if persistent.good_ending:
+                "{b}REALLY REALLY BAD ENDING (but the sheep feels happy with you){/b}."
+        elif persistent.bad_ending:
+                "{b}REALLY REALLY BAD ENDING (but the sheep feels disappointed with you){/b}."
         return
 
 label ignore :
