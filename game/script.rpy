@@ -236,9 +236,9 @@ label yes:
         elif happy > 3:
                 $ persistent.good_ending = True
         
-        if persistent.good_ending:
+        if persistent.good_ending == True:
                 "{b}Cookies Happy Ending (Good){/b}."
-        elif persistent.bad_ending:
+        elif persistent.bad_ending == True:
                 "{b}Cookies Sad Ending (Good){/b}."
         return
 
@@ -293,9 +293,9 @@ label no:
         elif happy > 6:
                 $ persistent.good_ending = True
         
-        if persistent.good_ending:
+        if persistent.good_ending == True:
                 "{b}REALLY REALLY BAD ENDING (but the sheep feels happy with you){/b}."
-        elif persistent.bad_ending:
+        elif persistent.bad_ending == True:
                 "{b}REALLY REALLY BAD ENDING (but the sheep feels disappointed with you){/b}."
         return
 
