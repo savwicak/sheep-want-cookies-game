@@ -1,5 +1,5 @@
 ## Sheep want cookies [game]
-A narrative game about a sheep who discovers cookies for the first time. Your choices will shape the story and determine which ending you get.- good ending (take sheep to see cookies)
+A narrative game about a sheep who discovers cookies for the first time. Your choices will shape the story and determine which ending you get.
 - Good Ending (You take the sheep to see cookies)
 - Bad Ending (You ignore the sheep)
 - REALLY REALLY Bad Ending (You make the sheep sad)
