@@ -1,10 +1,11 @@
 ## Sheep want cookies [game]
 A narrative game about a sheep who discovers cookies for the first time. Your choices will shape the story and determine which ending you get.
+Week 1 [2.10 Hours]
 - Good Ending (You take the sheep to see cookies)
 - Bad Ending (You ignore the sheep)
 - REALLY REALLY Bad Ending (You make the sheep sad)
 
-UPDATE!! (Week 2)
+UPDATE!! (Week 2) [2.11 Hours]
 - 2 backsounds (play random)
 - new character
 - new scene
@@ -15,10 +16,10 @@ UPDATE!! (Week 2)
 Follow the story and choose your responses carefully.
 Each decision you make will lead to a different outcome.
 
-## Creadit
+## Credit
 All sound downloaded from https://freesound.org/
 
 # Try it OUTT!!!!
-<a href="https://savpixels.itch.io/sheep-want-cookies" target="_blank">
+<a href="https://savpixels.itch.io/sheep-want-cookies" target="_blank"> [WEEK 2]
 Click Here!!
 </a>
